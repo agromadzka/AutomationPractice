@@ -7,11 +7,22 @@ Sample test automation project using Page Object Pattern.
 - Pytest
 
 ## Konfiguracja i uruchomienie testów
-### Przygotowanie środowiska
-TODO
+Instrukcja dotyczy systemu Windows.
 
-### Pobranie repozytorium i uruchomienie testów
-TODO
+1. Instalacja JDK np. OpenJDK 13 GA z https://jdk.java.net/archive (rozpakowanie pobranego archiwum, dodanie katalogu `bin` do zmiennej środowiskowej Path).
+2. Instalacja Python 3.8.3 (https://www.python.org/downloads/release/python-383) (w trakcie instalacji należy zaznaczyć opcję dodania do zmiennych środowiskowych oraz instalacji pip)
+3. (Opcjonalnie) Instalacja IDE PyCharm w celu otwarcia plików źródłowych (https://www.jetbrains.com/pycharm/download)
+4. Instalacja przeglądarki Chrome
+5. Pobranie Chromedriver w wersji odpowiadającej zainstalowanej wersji przeglądarki Chrome (https://chromedriver.chromium.org/downloads), dodanie katalogu z Chromedriver do zmiennej środowiskowej Path
+6. Sklonowanie repozytorium
+7. Otwarcie głównego katalogu projektu w wierszu poleceń Windows (cmd.exe) i wykonanie poniższych poleceń:
+- utworzenie virtualenv: `python -m venv .venv`
+- instalacja wymaganych modułów (w tym Selenium): `pip install -r requirements.txt`
+8. (Opcjonalnie) Edycja pliku `execution_scripts\run_all_tests_chrome.bat` w celu dostosowania ścieżek katalogów na pliki wynikowe (raport wykonania testów, screenshoty w przypadku błędu)
+9. Uruchomienie pliku `execution_scripts\run_all_tests_chrome.bat` - wykonanie wszystkich testów
+10. Raport z wykonania testów powinien zostać wygenerowany w katalogu wskazanym w skrypice `run_all_tests_chrome.bat`; jeżeli nie dokonano zmian w kroku 8. jest to: `C:\Reports\AutomationPractice\report.html`
+
+Uwaga: po wykonaniu instalacji i edycji zmiennych środowiskowych możliwa jest konieczność restartu systemu
 
 
 ## Strukura projektu
