@@ -15,9 +15,7 @@ Instrukcja dotyczy systemu Windows.
 4. Instalacja przeglądarki Chrome
 5. Pobranie Chromedriver w wersji odpowiadającej zainstalowanej wersji przeglądarki Chrome (https://chromedriver.chromium.org/downloads), dodanie katalogu z Chromedriver do zmiennej środowiskowej Path
 6. Sklonowanie repozytorium
-7. Otwarcie głównego katalogu projektu w wierszu poleceń Windows (cmd.exe) i wykonanie poniższych poleceń:
-- utworzenie virtualenv: `python -m venv .venv`
-- instalacja wymaganych modułów (w tym Selenium): `pip install -r requirements.txt`
+7. Otwarcie głównego katalogu projektu w wierszu poleceń Windows (cmd.exe) i instalacja wymaganych modułów (w tym Selenium): `pip install -r requirements.txt`
 8. (Opcjonalnie) Edycja pliku `execution_scripts\run_all_tests_chrome.bat` w celu dostosowania ścieżek katalogów na pliki wynikowe (raport wykonania testów, screenshoty w przypadku błędu)
 9. Uruchomienie pliku `execution_scripts\run_all_tests_chrome.bat` - wykonanie wszystkich testów
 10. Raport z wykonania testów powinien zostać wygenerowany w katalogu wskazanym w skrypice `run_all_tests_chrome.bat`; jeżeli nie dokonano zmian w kroku 8. jest to: `C:\Reports\AutomationPractice\report.html`
