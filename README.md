@@ -23,7 +23,7 @@ Instrukcja dotyczy systemu Windows.
 Uwaga: po wykonaniu instalacji i edycji zmiennych środowiskowych możliwa jest konieczność restartu systemu
 
 
-## Strukura projektu
+## Struktura projektu
 Framework składa się z następujących katalogów i plików głównego poziomu:
 - `domain` - klasy reprezentujące fragmenty domeny testowanej aplikacji
 - `execution_scripts` - skryty pozwalające na konfigurację uruchomienia i uruchomienie testów poza IDE 
