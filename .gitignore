@@ -1,0 +1,11 @@
+.idea/
+venv
+__pycache__/
+.pytest_cache/
+*.py[cod]
+__init__.py
+debug.log
+log.txt
+*.log
+node_modules
+package-lock.json
